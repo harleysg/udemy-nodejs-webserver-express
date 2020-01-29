@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    include ./templates/_head
+    body
+        section.hero.is-dark.is-fullheight
+            // Hero head: will stick at the top
+            include ./templates/_header
+            // Hero content: will be in the middle
+            .hero-body
+                .container.has-text-centered
+                    h1.title= message
+                    h2.subtitle Subtitle
+            // Hero footer: will stick at the bottom
+            .hero-foot
+                nav.tabs
+                    .container
+                        ul
+                            li.is-active: a Overview
+                            li: a Modifiers
+                            li: a Grid
+                            li: a Elements
+                            li: a Components
+                            li: a Layout

@@ -1,0 +1,6 @@
+mixin Tile-ancestor(infoObj)
+    .tile.is-parent&attributes(attributes): article.tile.is-child.box
+        if infoObj
+            p.title= infoObj.title
+            p.subtitle= infoObj.subtitle
+        block
