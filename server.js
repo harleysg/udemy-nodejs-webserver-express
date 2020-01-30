@@ -29,7 +29,7 @@ app.get("/about", function(req, res) {
 	});
 });
 
-app.get("/foo", function(req, res) {
+app.get("/api", function(req, res) {
 	const response = {
 		name: "Fulanito",
 		edad: 33,
