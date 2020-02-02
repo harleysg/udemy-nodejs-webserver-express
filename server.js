@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 /**
- * Midelware
+ * MIDDELWARES
  */
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "pug");
@@ -11,7 +11,7 @@ app.set("view engine", "pug");
  * HEROKU CONFIG
  */
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get("/", function(req, res) {
 	res.render("index", {
@@ -44,6 +44,6 @@ app.get("/api", function(req, res) {
 	res.send(response);
 });
 
-app.listen(port, () => {
-	console.log(` Puerto ${port} escuchando... `);
+app.listen(PORT, () => {
+	console.log(` Puerto ${PORT} escuchando... `);
 });
